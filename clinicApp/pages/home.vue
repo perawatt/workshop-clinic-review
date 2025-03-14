@@ -19,7 +19,7 @@
     <div class="bottom-nav">
       <button class="nav-button">Home</button>
       <button class="nav-button" @click="onClickUploadVideo">+</button>
-      <button class="nav-button">Profile</button>
+      <button class="nav-button" @click="onClickUserProfile">Profile</button>
     </div>
   </div>
 </template>
@@ -51,6 +51,10 @@ const filteredGifs = computed(() => {
 
 const onClickUploadVideo = () => {
   navigateTo('uploadVideo')
+};
+
+const onClickUserProfile = () => {
+  navigateTo('userProfile')
 };
 
 </script>
