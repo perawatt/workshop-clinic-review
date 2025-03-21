@@ -7,14 +7,14 @@
         :class="{ active: activeTab === 'orders' }"
         @click="activeTab = 'orders'"
       >
-        My Orders
+        My Videos
       </button>
       <button
         class="tab-button"
         :class="{ active: activeTab === 'favorites' }"
-        @click="activeTab = 'favorites'"
+        @click="onClickconfirm"
       >
-        My Favorites
+        My Orders
       </button>
     </div>
 
@@ -28,54 +28,59 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'GifListTabsPage',
-  data() {
-    return {
-      activeTab: 'orders', // Default tab
-      ordersGifs: [
-        {
-          id: 1,
-          url: 'https://www.adorama.com/alc/wp-content/uploads/2021/05/bird-wings-flying-feature.gif',
-          title: 'Bird Flying',
-        },
-        {
-          id: 2,
-          url: 'https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif',
-          title: 'Funny Cat',
-        },
-        {
-          id: 3,
-          url: 'https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif',
-          title: 'Dancing Banana',
-        },
-      ],
-      favoritesGifs: [
-        {
-          id: 4,
-          url: 'https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif',
-          title: 'Simple Wave',
-        },
-        {
-          id: 5,
-          url: 'https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif',
-          title: 'Spinning Circle',
-        },
-        {
-          id: 6,
-          url: 'https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif',
-          title: 'Smiling Emoji',
-        },
-      ],
-    };
+<script setup lang="ts">
+import { ref, computed } from 'vue';
+
+interface Gif {
+  id: number;
+  url: string;
+  title: string;
+}
+const onClickconfirm = () => {
+    navigateTo('userMyOrder')
+  };
+
+const activeTab = ref<'orders' | 'favorites'>('orders'); // Default tab
+
+const ordersGifs = ref<Gif[]>([
+  {
+    id: 1,
+    url: 'https://www.adorama.com/alc/wp-content/uploads/2021/05/bird-wings-flying-feature.gif',
+    title: 'Bird Flying',
   },
-  computed: {
-    displayedGifs() {
-      return this.activeTab === 'orders' ? this.ordersGifs : this.favoritesGifs;
-    },
+  {
+    id: 2,
+    url: 'https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif',
+    title: 'Funny Cat',
   },
-};
+  {
+    id: 3,
+    url: 'https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif',
+    title: 'Dancing Banana',
+  },
+]);
+
+const favoritesGifs = ref<Gif[]>([
+  {
+    id: 4,
+    url: 'https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif',
+    title: 'Simple Wave',
+  },
+  {
+    id: 5,
+    url: 'https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif',
+    title: 'Spinning Circle',
+  },
+  {
+    id: 6,
+    url: 'https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif',
+    title: 'Smiling Emoji',
+  },
+]);
+
+const displayedGifs = computed(() => {
+  return activeTab.value === 'orders' ? ordersGifs.value : favoritesGifs.value;
+});
 </script>
 
 <style scoped>

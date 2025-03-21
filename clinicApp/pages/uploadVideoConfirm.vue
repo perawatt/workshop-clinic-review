@@ -2,7 +2,6 @@
   <div class="upload-container">
     <div class="upload-card">
       <h1 class="title">Upload Your Video</h1>
-      <form>
         <!-- VIDEO Viewer -->
         <div class="form-group">
           <label for="gif-view">VIDEO Preview</label>
@@ -47,16 +46,16 @@
         </div>
   
         <!-- Submit Button -->
-        <button type="submit" class="submit-btn">Submit</button>
-      </form>
+        <button class="submit-btn" @click="onClickconfirm">Submit</button>
     </div>
   </div>
   </template>
   
-  <script>
-  export default {
-  name: "UploadPage",
+  <script setup lang="ts">
+  const onClickconfirm = () => {
+    navigateTo('userProfile')
   };
+  
   </script>
   
   <style scoped>

@@ -11,6 +11,7 @@
         <div class="gif-full-view">
           <img :src="gif.url" :alt="gif.title" class="gif-preview" />
           <div class="gif-title">{{ gif.title }}</div>
+          <button class="submit-btn" @click="onClickconfirm">จองคลินิค</button>
         </div>
       </div>
     </div>
@@ -48,6 +49,10 @@ const filteredGifs = computed(() => {
     gif.title.toLowerCase().includes(data.value.searchQuery.toLowerCase())
   );
 });
+
+const onClickconfirm = () => {
+  navigateTo('clinicCourse')
+};
 
 const onClickUploadVideo = () => {
   navigateTo('uploadVideo')
