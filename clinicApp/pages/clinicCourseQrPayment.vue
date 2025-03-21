@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <div class="container">     
+    <H3 class="container-text">จ่ายเงินมัดจำ 1500 บาท</H3 >
     <img class="round" @click="showModal = true" src="https://failfast.blob.core.windows.net/mcontent-imgs/temps/delivery/dfqr.png" />
     <p class="container-text">บันทึกรูป</p>
 
@@ -38,7 +39,7 @@ const gotoclinicProfile = () => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 60vh;
 }
 
 .round {

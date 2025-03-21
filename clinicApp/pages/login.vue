@@ -26,7 +26,7 @@ const onClickLogin = () => {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 60vh;
   background-color: #f5f6fa;
   font-family: 'Arial', sans-serif;
 }

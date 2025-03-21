@@ -31,8 +31,8 @@
           <select id="category" class="dropdown">
             <option value="">Select Clinic</option>
             <option value="education">Clinic M</option>
-            <option value="entertainment">Clinic Aaa</option>
-            <option value="sports">Clinic จมูก</option>
+            <option value="entertainment">Clinic ทำปาก</option>
+            <option value="sports">Clinic ทำจมูก</option>
           </select>
         </div>
   

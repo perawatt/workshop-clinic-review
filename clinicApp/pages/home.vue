@@ -50,7 +50,7 @@ export default {
         {
           id: 1,
           url: 'https://media1.tenor.com/m/um3E74IANfIAAAAC/itskatchii-katchii.gif',
-          title: 'Relaxing Spa Treatment',
+          title: 'Relaxing Treatment',
           description:
             'A soothing GIF showcasing a relaxing spa treatment at a beauty clinic.',
         },
