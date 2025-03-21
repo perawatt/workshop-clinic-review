@@ -60,72 +60,31 @@ export default {
       gifs: [
         {
           id: 1,
-          url: 'https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif',
+          url: 'https://media1.tenor.com/m/um3E74IANfIAAAAC/itskatchii-katchii.gif',
           title: 'Relaxing Spa Treatment',
           description:
             'A soothing GIF showcasing a relaxing spa treatment at a beauty clinic.',
         },
         {
           id: 2,
-          url: 'https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif',
+          url: 'https://media1.tenor.com/m/vhk0LzhymDAAAAAC/chuu-squid-game.gif',
           title: 'Facial Care',
           description: 'A GIF highlighting a rejuvenating facial care session.',
         },
         {
           id: 3,
-          url: 'https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif',
+          url: 'https://media1.tenor.com/m/bKejiMPOmLUAAAAC/semi-semi-squid-game.gif',
           title: 'Skincare Routine',
           description:
             'A quick glimpse into a professional skincare routine at a beauty clinic.',
         },
         {
           id: 4,
-          url: 'https://media.giphy.com/media/l0HUpt2s9Pclgt9Vm/giphy.gif',
-          title: 'Massage Therapy',
+          url: 'https://media1.tenor.com/m/YHpY6lqbsZ8AAAAd/itzy-lee-chaeryeong.gif',
+          title: 'Skincare Routine',
           description:
-            'A calming GIF of a massage therapy session for relaxation and wellness.',
-        },
-        {
-          id: 5,
-          url: 'https://media.giphy.com/media/3o7abldj0b3rxrZUxW/giphy.gif',
-          title: 'Laser Treatment',
-          description:
-            'A demonstration of advanced laser treatment for skin care.',
-        },
-        {
-          id: 6,
-          url: 'https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif',
-          title: 'Manicure Session',
-          description:
-            'A GIF showing a manicure session for nail care and beauty.',
-        },
-        {
-          id: 7,
-          url: 'https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif',
-          title: 'Hair Styling',
-          description: 'A stylish GIF of hair styling at a beauty clinic.',
-        },
-        {
-          id: 8,
-          url: 'https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif',
-          title: 'Makeup Application',
-          description:
-            'A professional makeup application session for a flawless look.',
-        },
-        {
-          id: 9,
-          url: 'https://media.giphy.com/media/l0HUpt2s9Pclgt9Vm/giphy.gif',
-          title: 'Body Scrub',
-          description:
-            'A rejuvenating body scrub session for smooth and glowing skin.',
-        },
-        {
-          id: 10,
-          url: 'https://media.giphy.com/media/3o7abldj0b3rxrZUxW/giphy.gif',
-          title: 'Hydration Therapy',
-          description:
-            'A GIF showcasing hydration therapy for refreshed and healthy skin.',
-        },
+            'A quick glimpse into a professional skincare routine at a beauty clinic.',
+        }
       ],
     };
   },

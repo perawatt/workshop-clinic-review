@@ -45,19 +45,14 @@ const activeTab = ref<'orders' | 'favorites'>('orders'); // Default tab
 const ordersGifs = ref<Gif[]>([
   {
     id: 1,
-    url: 'https://www.adorama.com/alc/wp-content/uploads/2021/05/bird-wings-flying-feature.gif',
-    title: 'Bird Flying',
+    url: 'https://media1.tenor.com/m/YHpY6lqbsZ8AAAAd/itzy-lee-chaeryeong.gif',
+    title: 'ทำตา',
   },
   {
     id: 2,
-    url: 'https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif',
-    title: 'Funny Cat',
-  },
-  {
-    id: 3,
-    url: 'https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif',
-    title: 'Dancing Banana',
-  },
+    url: 'https://media1.tenor.com/m/um3E74IANfIAAAAC/itskatchii-katchii.gif',
+    title: 'ทำปาก',
+  }
 ]);
 
 const favoritesGifs = ref<Gif[]>([

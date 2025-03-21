@@ -8,7 +8,7 @@
           <img
             id="gif-view"
             class="gif-preview"
-            src="https://www.adorama.com/alc/wp-content/uploads/2021/05/bird-wings-flying-feature.gif"
+            src="https://media1.tenor.com/m/YHpY6lqbsZ8AAAAd/itzy-lee-chaeryeong.gif"
             alt="Bird Wings Flying"
           />
         </div>
