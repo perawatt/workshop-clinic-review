@@ -57,7 +57,7 @@ Code snippet
 .navigation {
   background-color: #2980B9;
   color: white;
-  padding: 10px;
+  padding: 0px;
 }
 
 .nav-list {
