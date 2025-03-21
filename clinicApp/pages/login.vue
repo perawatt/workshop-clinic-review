@@ -13,7 +13,9 @@
 // export default {
 //   name: "LoginPage",
 // };
-
+definePageMeta({
+  layout: 'login',
+});
 const onClickLogin = () => {
   navigateTo('home')
 };

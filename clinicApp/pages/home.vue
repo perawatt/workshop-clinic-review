@@ -1,22 +1,11 @@
 <template>
   <div class="home-container">
-    <!-- Search Bar -->
     <div class="search-bar">
-      <input
-        type="text"
-        placeholder="Search..."
-        class="search-input"
-        v-model="searchQuery"
-      />
+      <input type="text" placeholder="Search..." class="search-input" v-model="searchQuery" />
     </div>
-
     <!-- GIF Cards -->
-    <div
-      class="gif-card"
-      v-for="(gif, index) in filteredGifs"
-      :key="gif.id"
-      :style="{ transform: `translateY(${(index - activeIndex) * 100}%)` }"
-    >
+    <div class="gif-card" v-for="(gif, index) in filteredGifs" :key="gif.id"
+      :style="{ transform: `translateY(${(index - activeIndex) * 100}%)` }">
       <!-- GIF -->
       <img :src="gif.url" alt="GIF" class="gif" />
 
@@ -154,7 +143,8 @@ export default {
 
 .search-input {
   width: 100%;
-  padding: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   font-size: 16px;
   border: 1px solid #dcdcdc;
   border-radius: 4px;

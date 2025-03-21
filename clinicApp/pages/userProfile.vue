@@ -2,18 +2,10 @@
   <div class="gif-list-container">
     <!-- Tabs -->
     <div class="tabs-container">
-      <button
-        class="tab-button"
-        :class="{ active: activeTab === 'orders' }"
-        @click="activeTab = 'orders'"
-      >
+      <button class="tab-button" :class="{ active: activeTab === 'orders' }" @click="activeTab = 'orders'">
         My Videos
       </button>
-      <button
-        class="tab-button"
-        :class="{ active: activeTab === 'favorites' }"
-        @click="onClickconfirm"
-      >
+      <button class="tab-button" :class="{ active: activeTab === 'favorites' }" @click="onClickconfirm">
         My Orders
       </button>
     </div>
@@ -37,8 +29,8 @@ interface Gif {
   title: string;
 }
 const onClickconfirm = () => {
-    navigateTo('userMyOrder')
-  };
+  navigateTo('userMyOrder')
+};
 
 const activeTab = ref<'orders' | 'favorites'>('orders'); // Default tab
 
