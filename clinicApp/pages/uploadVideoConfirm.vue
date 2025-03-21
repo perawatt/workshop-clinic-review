@@ -28,21 +28,21 @@
   
         <!-- Dropdown Fields -->
         <div class="form-group">
-          <label for="category">Category</label>
+          <label for="category">Clinic</label>
           <select id="category" class="dropdown">
-            <option value="">Select Category</option>
-            <option value="education">Education</option>
-            <option value="entertainment">Entertainment</option>
-            <option value="sports">Sports</option>
+            <option value="">Select Clinic</option>
+            <option value="education">Clinic M</option>
+            <option value="entertainment">Clinic Aaa</option>
+            <option value="sports">Clinic จมูก</option>
           </select>
         </div>
   
         <div class="form-group">
-          <label for="visibility">Visibility</label>
+          <label for="visibility">Course</label>
           <select id="visibility" class="dropdown">
-            <option value="">Select Visibility</option>
-            <option value="public">Public</option>
-            <option value="private">Private</option>
+            <option value="">Select Course</option>
+            <option value="public">Course A</option>
+            <option value="private">Course B</option>
           </select>
         </div>
   
